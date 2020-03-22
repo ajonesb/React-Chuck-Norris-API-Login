@@ -1,6 +1,6 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, IndexRoute} from "react-router-dom";
 
 // Components
 import "./App.css";
@@ -23,6 +23,8 @@ const App = () => {
               <PrivateRoute exact path="/" component={Devices} />
               <PrivateRoute exact path="/" component={pollDevices} />
               <Route exact path="/login" component={Login} />
+              
+
             </div>
           </Router>
         </AuthProvider>
