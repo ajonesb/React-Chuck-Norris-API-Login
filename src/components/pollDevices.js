@@ -1,10 +1,15 @@
 import React from "react";
 
-
 class PollDevices extends React.Component {
-  state = {
-    devices: ""
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      devices: "",
+      email: "string",
+      password: "string"
+    };
+  }
 
   componentDidMount() {
     this.getDevices();
@@ -14,9 +19,9 @@ class PollDevices extends React.Component {
   }
 
   getDevices() {
-    // No device api with data so using sample api 
+    // No device api with data so using sample api
     fetch("https://api.chucknorris.io/jokes/random")
-    .then(response => response.json())
+      .then(response => response.json())
       .then(data => {
         this.setState({
           devices: data.value

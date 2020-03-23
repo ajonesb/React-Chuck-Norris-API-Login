@@ -1,12 +1,13 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, IndexRoute } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Components
 import "./App.css";
 import Devices from "./components/Devices";
 import Login from "./components/Login";
 import pollDevices from "./components/pollDevices";
+import Notify from "./components/Notify";
 
 // Routing
 import { AuthProvider } from "./routing/Auth";
@@ -21,6 +22,7 @@ const App = () => {
             <div>
               <PrivateRoute exact path="/" component={Devices} />
               <PrivateRoute exact path="/" component={pollDevices} />
+              <PrivateRoute exact path="/notify" component={Notify} />
               <Route exact path="/login" component={Login} />
             </div>
           </Router>
