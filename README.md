@@ -11,6 +11,9 @@ Password: chucknorris123
 
 Application which consists of a login component and a component which queries the api from https://api.chucknorris.io/jokes/random and shows random Chuck Norris quotes.
 
+The app uses the login functionality from the backend in Firebase for the user to be 
+able to login to the application, controlled by Firebase. 
+
 
 # Running the app
 
