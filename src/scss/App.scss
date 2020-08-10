@@ -1,0 +1,129 @@
+@import "./variables.scss";
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  background-color: $background_color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $text-gray-font;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+label {
+  width: 100%;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: flex;
+  max-width: 180px;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid $body-loader-border-color;
+  border-radius: $body-loader-border-radius;
+  border-top: 16px solid $body-loader-border-color-top;
+  width: $body-loader-border-width;
+  height: $body-loader-border-height;
+  -webkit-animation: $body-loader-webkit-animation;
+  animation: $body-loader-animation;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: $body-loader-webkit-keyframes-spin-0-percent-webkit-transform;
+  }
+  100% {
+    -webkit-transform: $body-loader-webkit-keyframes-spin-100-percent-webkit-transform;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: $body-loader-webkit-keyframes-spin-0-percent-transform;
+  }
+  100% {
+    transform: $body-loader-webkit-keyframes-spin-100-percent-transform;
+  }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: $body-loader-animate-bottom-webkit-animation-name;
+  -webkit-animation-duration: $body-loader-animate-bottom-webkit-animation-duration;
+  animation-name: $body-loader-animate-bottom-animation-name;
+  animation-duration: $body-loader-animate-bottom--animation-duration;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+h1 {
+  color: $heading-color;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+p {
+  color: $text-gray-font;
+  font-size: $text-body-font-size;
+  font-weight: 300;
+  line-height: 28px;
+}
