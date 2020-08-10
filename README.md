@@ -7,7 +7,7 @@ Email: alanjones83@gmail.com
 Password: chucknorris123
 
 
-# Devices
+# Application
 
 Application which consists of a login component and a component which queries the api from https://api.chucknorris.io/jokes/random and shows random Chuck Norris quotes.
 
