@@ -9,9 +9,7 @@ Password: chucknorris123
 
 # Devices
 
-The devices screen consists of functionality to show random api calls to a specific api.
-
-Since the api for http://35.201.2.209:8000/ currently has no data to show, mock api is used to randomly show data, in the case of using "devices", here we will show random quotes from https://api.chucknorris.io/jokes/random
+Application which consists of a login component and a component which queries the api from https://api.chucknorris.io/jokes/random and shows random Chuck Norris quotes.
 
 
 # Running the app
