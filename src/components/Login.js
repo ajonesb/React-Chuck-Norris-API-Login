@@ -28,7 +28,7 @@ const Login = ({ history }) => {
 
   return (
     <div>
-      <h1 className="text-center">Login</h1>
+      <h1 className="text-center">Chuck Norris API Login</h1>
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label>
@@ -53,7 +53,7 @@ const Login = ({ history }) => {
         </div>
 
         <button type="submit" className="btn btn-primary btn-block">
-          Log in
+          Login Chuck Norris
         </button>
       </form>
     </div>

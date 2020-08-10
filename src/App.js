@@ -3,11 +3,9 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Components
-import "./App.css";
-import Devices from "./components/Devices";
+import "./scss/App.scss";
+import ChuckNorris from "./components/ChuckNorris";
 import Login from "./components/Login";
-import pollDevices from "./components/pollDevices";
-import Notify from "./components/Notify";
 
 // Routing
 import { AuthProvider } from "./routing/Auth";
@@ -18,12 +16,10 @@ const App = () => {
     <div className="auth-wrapper">
       <div className="auth-inner">
         <AuthProvider>
-          <Router>
+          <Router basename={'/'}>
             <div>
-              <PrivateRoute exact path="/" component={Devices} />
-              <PrivateRoute exact path="/" component={pollDevices} />
-              <PrivateRoute exact path="/notify" component={Notify} />
-              <Route exact path="/login" component={Login} />
+              <PrivateRoute path={`${process.env.PUBLIC_URL}/`} component={ChuckNorris} />
+              <Route path={`${process.env.PUBLIC_URL}/login`} component={Login} />
             </div>
           </Router>
         </AuthProvider>

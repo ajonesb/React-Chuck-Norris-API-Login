@@ -1,30 +1,31 @@
 import React from "react";
 
-class PollDevices extends React.Component {
+class FetchChuckNorris extends React.Component {
+  _isMounted = false;
   constructor() {
     super();
 
     this.state = {
       devices: "",
       email: "string",
-      password: "string"
+      password: "string",
     };
   }
 
   componentDidMount() {
-    this.getDevices();
+    this._isMounted = true;
+    this.getChuckNorrisQuotes();
     this.interval = setInterval(() => {
-      this.getDevices();
-    }, 5000);
+      this.getChuckNorrisQuotes();
+    }, 7000);
   }
 
-  getDevices() {
-    // No device api with data so using sample api
+  getChuckNorrisQuotes() {
     fetch("https://api.chucknorris.io/jokes/random")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.setState({
-          devices: data.value
+          devices: data.value,
         });
       });
   }
@@ -38,4 +39,4 @@ class PollDevices extends React.Component {
   }
 }
 
-export default PollDevices;
+export default FetchChuckNorris;

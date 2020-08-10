@@ -1,12 +1,13 @@
 {
-  "name": "meld-cx-frontend",
-  "homepage": "./",
+  "name": "chuck-norris-api",
+  "homepage": "http://jonesfrontendwebdev.com/react-chuck-norris/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "firebase": "^5.10.1",
+    "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",

@@ -1,10 +1,10 @@
-# React Login and Devices 
+# Chuck Norris login API Query APP
 
 # Login Screen 
 
 Login:
 Email: alanjones83@gmail.com
-Password: meld123
+Password: chucknorris123
 
 
 # Devices

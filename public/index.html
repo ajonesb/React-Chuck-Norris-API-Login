@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Meld-CX - Alan Jones</title>
+    <title>React Chuck Norris API</title>
   </head>
-  <body onload="meldCXLoader()" style="margin:0;">
+  <body onload="Loader()" style="margin:0;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="loader"></div>
 
@@ -22,7 +22,7 @@
     <script>
       var setTimerLoader;
 
-      function meldCXLoader() {
+      function Loader() {
         setTimerLoader = setTimeout(showPage, 2000);
       }
 

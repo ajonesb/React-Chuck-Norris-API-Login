@@ -1,16 +1,15 @@
 import React from "react";
 import app from "../base";
-import PollDevices from "../components/pollDevices";
-import Notify from "../components/Notify";
+import FetchChuckNorris from "./FetchChuckNorris";
 
-const Devices = () => {
+const chuckNorris = () => {
   return (
     <div>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="text-center">Devices Online</h1>
-            <PollDevices />
+            <h1 className="text-center">Chuck Noris API</h1>
+            <FetchChuckNorris />
           </div>
         </div>
         <div className="buttons-container fixed-bottom row">
@@ -19,9 +18,8 @@ const Devices = () => {
               className="button-signout mb-2 btn btn-primary btn-block"
               onClick={() => app.auth().signOut()}
             >
-              Sign out
+              Sign Out
             </button>
-            <Notify />
           </div>
         </div>
       </div>
@@ -29,4 +27,4 @@ const Devices = () => {
   );
 };
 
-export default Devices;
+export default chuckNorris;
